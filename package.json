@@ -1,0 +1,22 @@
+{
+  "name": "evidence-management-system",
+  "version": "1.0.0",
+  "description": "A full-stack Evidence Management System with role-based authentication",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\""
+  },
+  "keywords": [
+    "evidence-management",
+    "role-based-auth",
+    "mern-stack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "nodemailer": "^6.10.1"
+  }
+}
