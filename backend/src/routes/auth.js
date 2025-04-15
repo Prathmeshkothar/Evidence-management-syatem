@@ -6,11 +6,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const router = express.Router();
-const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
-axios.post(`${BASE_URL}/api/auth/signup/officer`, formData)
-  .then(res => console.log(res.data))
-  .catch(err => console.error("Signup error:", err));
 
 // Email configuration
 const transporter = nodemailer.createTransport({
